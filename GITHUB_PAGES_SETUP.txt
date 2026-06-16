@@ -1,0 +1,78 @@
+================================================================================
+GITHUB PAGES PORTFOLIO — SETUP GUIDE
+Sivaelango Periyasamy
+================================================================================
+
+FILES IN THIS FOLDER
+--------------------
+index.html     → Your portfolio homepage (upload this to GitHub)
+resume.pdf     → Optional: copy your PDF here for "Download Resume" button
+
+================================================================================
+STEP 1 — CREATE GITHUB REPOSITORY
+================================================================================
+
+1. Go to https://github.com/new
+2. Repository name:  sivaelango-portfolio   (or your preferred name)
+3. Visibility:       Public  (required for free GitHub Pages)
+4. Check:            Add a README file
+5. Click Create repository
+
+================================================================================
+STEP 2 — UPLOAD FILES
+================================================================================
+
+Option A — GitHub Website (easiest):
+  1. Open your new repo on GitHub
+  2. Click "Add file" → "Upload files"
+  3. Drag index.html from this folder
+  4. Optional: upload resume.pdf (rename from "Sivaelango Periyasamy.pdf")
+  5. Commit changes
+
+Option B — Git Command Line:
+  cd C:\Users\sivaelango.periyasam\Source\Rough_Work\github-pages-portfolio
+  git init
+  git add index.html resume.pdf
+  git commit -m "Add portfolio site"
+  git branch -M main
+  git remote add origin https://github.com/YOUR_USERNAME/sivaelango-portfolio.git
+  git push -u origin main
+
+================================================================================
+STEP 3 — ENABLE GITHUB PAGES
+================================================================================
+
+1. Go to repo → Settings → Pages (left sidebar)
+2. Source: Deploy from a branch
+3. Branch: main  |  Folder: / (root)
+4. Click Save
+5. Wait 1–3 minutes
+
+Your site will be live at:
+  https://YOUR_USERNAME.github.io/sivaelango-portfolio/
+
+================================================================================
+STEP 4 — ADD TO LINKEDIN
+================================================================================
+
+LinkedIn → Profile → Add profile section → Recommended → Add link
+  Title: Portfolio / Resume
+  URL:   https://YOUR_USERNAME.github.io/sivaelango-portfolio/
+
+================================================================================
+OPTIONAL — CUSTOM DOMAIN
+================================================================================
+
+Settings → Pages → Custom domain → e.g. sivaelango.dev
+(Requires purchasing a domain and DNS CNAME record)
+
+================================================================================
+RESUME PDF DOWNLOAD BUTTON
+================================================================================
+
+The "Download Resume" button links to resume.pdf in the same folder.
+Copy your PDF into this folder and rename it to resume.pdf before uploading.
+
+If you skip resume.pdf, remove or update the button in index.html.
+
+================================================================================
